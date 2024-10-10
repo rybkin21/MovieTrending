@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B46642772CB8208C00165690 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46642762CB8208C00165690 /* AppDelegate.swift */; };
-		B466427B2CB8208C00165690 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B466427A2CB8208C00165690 /* ViewController.swift */; };
+		B466427B2CB8208C00165690 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B466427A2CB8208C00165690 /* MainViewController.swift */; };
 		B46642802CB8208E00165690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B466427F2CB8208E00165690 /* Assets.xcassets */; };
 		B46642832CB8208E00165690 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B46642822CB8208E00165690 /* Base */; };
 		B46642922CB829A300165690 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B46642912CB829A300165690 /* SnapKit */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		B46642732CB8208C00165690 /* MovieTrending.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieTrending.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46642762CB8208C00165690 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B466427A2CB8208C00165690 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B466427A2CB8208C00165690 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B466427F2CB8208E00165690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B46642822CB8208E00165690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B46642842CB8208E00165690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,8 +81,14 @@
 		B466428C2CB825A000165690 /* Sourses */ = {
 			isa = PBXGroup;
 			children = (
+				B46642992CB8347700165690 /* Networking */,
+				B46642982CB8346900165690 /* Extensions */,
+				B46642972CB8343A00165690 /* Classes */,
+				B46642962CB8343300165690 /* Model */,
+				B46642952CB8342A00165690 /* Controllers */,
+				B46642942CB8342200165690 /* ViewModel */,
+				B46642932CB8341500165690 /* View */,
 				B466428E2CB825C100165690 /* App */,
-				B466428F2CB825C900165690 /* ViewControllers */,
 				B466428D2CB825B300165690 /* Storyboards */,
 			);
 			name = Sourses;
@@ -104,12 +110,62 @@
 			name = App;
 			sourceTree = "<group>";
 		};
-		B466428F2CB825C900165690 /* ViewControllers */ = {
+		B466428F2CB825C900165690 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B466427A2CB8208C00165690 /* ViewController.swift */,
+				B466427A2CB8208C00165690 /* MainViewController.swift */,
 			);
-			name = ViewControllers;
+			name = MainViewController;
+			sourceTree = "<group>";
+		};
+		B46642932CB8341500165690 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B46642942CB8342200165690 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		B46642952CB8342A00165690 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B466428F2CB825C900165690 /* MainViewController */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B46642962CB8343300165690 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B46642972CB8343A00165690 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		B46642982CB8346900165690 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B46642992CB8347700165690 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B466427B2CB8208C00165690 /* ViewController.swift in Sources */,
+				B466427B2CB8208C00165690 /* MainViewController.swift in Sources */,
 				B46642772CB8208C00165690 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
