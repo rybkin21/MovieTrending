@@ -11,9 +11,12 @@
 		B466427B2CB8208C00165690 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B466427A2CB8208C00165690 /* MainViewController.swift */; };
 		B46642802CB8208E00165690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B466427F2CB8208E00165690 /* Assets.xcassets */; };
 		B46642832CB8208E00165690 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B46642822CB8208E00165690 /* Base */; };
-		B46642922CB829A300165690 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B46642912CB829A300165690 /* SnapKit */; };
 		B466429B2CB8494A00165690 /* MainViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B466429A2CB8494A00165690 /* MainViewController + TableView.swift */; };
 		B4CED11A2CBAA2B60021AC20 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CED1192CBAA2B60021AC20 /* MainViewModel.swift */; };
+		B4CED11C2CBAABF00021AC20 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CED11B2CBAABF00021AC20 /* NetworkConstant.swift */; };
+		B4CED11E2CBAAD4C0021AC20 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CED11D2CBAAD4C0021AC20 /* APICaller.swift */; };
+		B4CED1202CBAAD910021AC20 /* TrendingMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CED11F2CBAAD910021AC20 /* TrendingMovieModel.swift */; };
+		B4CED1282CBAB1100021AC20 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B4CED1272CBAB1100021AC20 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		B46642842CB8208E00165690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B466429A2CB8494A00165690 /* MainViewController + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController + TableView.swift"; sourceTree = "<group>"; };
 		B4CED1192CBAA2B60021AC20 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		B4CED11B2CBAABF00021AC20 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		B4CED11D2CBAAD4C0021AC20 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		B4CED11F2CBAAD910021AC20 /* TrendingMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMovieModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B46642922CB829A300165690 /* SnapKit in Frameworks */,
+				B4CED1282CBAB1100021AC20 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +155,7 @@
 		B46642962CB8343300165690 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B4CED11F2CBAAD910021AC20 /* TrendingMovieModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -170,6 +177,8 @@
 		B46642992CB8347700165690 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				B4CED11B2CBAABF00021AC20 /* NetworkConstant.swift */,
+				B4CED11D2CBAAD4C0021AC20 /* APICaller.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -191,7 +200,7 @@
 			);
 			name = MovieTrending;
 			packageProductDependencies = (
-				B46642912CB829A300165690 /* SnapKit */,
+				B4CED1272CBAB1100021AC20 /* SnapKit */,
 			);
 			productName = MovieTrending;
 			productReference = B46642732CB8208C00165690 /* MovieTrending.app */;
@@ -251,9 +260,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B466429B2CB8494A00165690 /* MainViewController + TableView.swift in Sources */,
+				B4CED11E2CBAAD4C0021AC20 /* APICaller.swift in Sources */,
 				B466427B2CB8208C00165690 /* MainViewController.swift in Sources */,
 				B46642772CB8208C00165690 /* AppDelegate.swift in Sources */,
+				B4CED11C2CBAABF00021AC20 /* NetworkConstant.swift in Sources */,
 				B4CED11A2CBAA2B60021AC20 /* MainViewModel.swift in Sources */,
+				B4CED1202CBAAD910021AC20 /* TrendingMovieModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,7 +501,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B46642912CB829A300165690 /* SnapKit */ = {
+		B4CED1272CBAB1100021AC20 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B46642902CB829A300165690 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
