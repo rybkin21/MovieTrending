@@ -12,6 +12,8 @@
 		B46642802CB8208E00165690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B466427F2CB8208E00165690 /* Assets.xcassets */; };
 		B46642832CB8208E00165690 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B46642822CB8208E00165690 /* Base */; };
 		B46642922CB829A300165690 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B46642912CB829A300165690 /* SnapKit */; };
+		B466429B2CB8494A00165690 /* MainViewController + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B466429A2CB8494A00165690 /* MainViewController + TableView.swift */; };
+		B4CED11A2CBAA2B60021AC20 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CED1192CBAA2B60021AC20 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		B466427F2CB8208E00165690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B46642822CB8208E00165690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B46642842CB8208E00165690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B466429A2CB8494A00165690 /* MainViewController + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController + TableView.swift"; sourceTree = "<group>"; };
+		B4CED1192CBAA2B60021AC20 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				B466427A2CB8208C00165690 /* MainViewController.swift */,
+				B466429A2CB8494A00165690 /* MainViewController + TableView.swift */,
 			);
 			name = MainViewController;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 		B46642942CB8342200165690 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B4CED1192CBAA2B60021AC20 /* MainViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -244,8 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B466429B2CB8494A00165690 /* MainViewController + TableView.swift in Sources */,
 				B466427B2CB8208C00165690 /* MainViewController.swift in Sources */,
 				B46642772CB8208C00165690 /* AppDelegate.swift in Sources */,
+				B4CED11A2CBAA2B60021AC20 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
