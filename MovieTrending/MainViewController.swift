@@ -26,6 +26,9 @@ class MainViewController: UIViewController {
         setupLayout()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        viewModel.getData()
+    }
     // MARK: - Setup
 
     private func setupHierarchy() {
