@@ -10,8 +10,9 @@ class MainViewController: UIViewController {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.separatorStyle = .none
         tableView.backgroundColor = .clear
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(MainMovieCell.self, forCellReuseIdentifier: MainMovieCell.identifier)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
@@ -25,7 +26,7 @@ class MainViewController: UIViewController {
 
     var viewModel: MainViewModel = MainViewModel()
 
-    var cellDataSource: [Movie] = []
+    var cellDataSource: [MovieTableCellViewModel] = []
 
     // MARK: - Lifecycle
 
@@ -44,7 +45,7 @@ class MainViewController: UIViewController {
     // MARK: - Setup
 
     private func setupHierarchy() {
-        view.backgroundColor = .systemMint
+        view.backgroundColor = .systemBackground
         self.title = "NAv Title"
         view.addSubview(tableView)
         view.addSubview(activityIndicator)
