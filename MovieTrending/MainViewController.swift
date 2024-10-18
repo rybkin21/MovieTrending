@@ -46,7 +46,7 @@ class MainViewController: UIViewController {
 
     private func setupHierarchy() {
         view.backgroundColor = .systemBackground
-        self.title = "NAv Title"
+        self.title = "Top Trending Movies"
         view.addSubview(tableView)
         view.addSubview(activityIndicator)
     }
@@ -84,6 +84,18 @@ class MainViewController: UIViewController {
         }
     }
     
+    func openDetail(movieId: Int) {
+        guard let movie = viewModel.retiveMovie(with: movieId) else {
+            return
+        }
+        let detailsViewModel = DetailsMovieViewModel(movie: movie)
+        let detailsController = DetailsMovieViewController(viewModel: detailsViewModel)
+
+        DispatchQueue.main.async {
+            self.navigationController?.pushViewController(detailsController, animated: true)
+        }
+    }
+
     // MARK: - Actions
 
     @objc private func buttonPressed() {

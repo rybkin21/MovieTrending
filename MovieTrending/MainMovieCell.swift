@@ -22,8 +22,8 @@ class MainMovieCell: UITableViewCell {
     private lazy var backView: UIView = {
         let view = UIView()
         view.backgroundColor = .lightGray.withAlphaComponent(0.1)
-        view.layer.borderColor = UIColor.label.cgColor
-        view.layer.borderWidth = 1
+        view.layer.borderColor = UIColor.systemGray4.cgColor
+        view.layer.borderWidth = 0.8
         view.layer.cornerRadius = 10
         view.clipsToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
